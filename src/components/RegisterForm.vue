@@ -67,7 +67,7 @@
         <label for="supersafe">Super safe (+{{packagePrice.superSafe}}{{form.currency}}, 75%)</label>
         <span class="error" v-if="error.package">{{ error.package }}</span>
       </div>
-      <h2 v-if="form.age"><span>Your premium is:</span> {{ form.premium }}{{ form.currency }}</h2>
+      <h2 v-if="parseInt(form.age) > 0"><span>Your premium is:</span> {{ form.premium }}{{ form.currency }}</h2>
       <div class="action">
         <button @click="handleRedirect('GreetingScreen')">Back</button>
         <button @click="handleValidateForm">Next</button>
@@ -169,6 +169,7 @@
   const handleValidateForm = () => {
     error.name = !form.name ? 'Name is required' : ''
     error.age = !form.age ? 'Age is required' : ''
+    error.age = parseInt(form.age) < 1 ? 'Age must be greater than 0' : ''
     error.country = !form.country ? 'Country is required' : ''
     error.package = !form.package ? 'Select a package' : ''
 
