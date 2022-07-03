@@ -1,5 +1,3 @@
-# How to run the 
-
 # Tools used
 1. Vue JS version 3
 2. Vue router - for handling application routes
