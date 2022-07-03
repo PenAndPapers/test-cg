@@ -134,6 +134,7 @@
     packagePrice.superSafe = premiumPercentage(75)
 
     // set premium price based on selected package
+    // premium = 10 * age * rate + country standard price
     if (form.package === 'Standard') return form.premium = premium + packagePrice.standard
     if (form.package === 'Safe') return form.premium = premium + packagePrice.safe + packagePrice.standard
     if (form.package === 'Super Safe') return form.premium = premium + packagePrice.superSafe + packagePrice.standard

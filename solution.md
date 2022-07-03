@@ -1,3 +1,5 @@
+# How to run the 
+
 # Tools used
 1. Vue JS version 3
 2. Vue router - for handling application routes
@@ -23,7 +25,10 @@ Since the application is just small I did not used a state management library
 
 Clicking each button will navigation the user to different screens/pages
 
+I've separated RegisterForm component to it's parent making it as a stand alone component and can be reused
+
 User details will be stored to session storage after they filled up and submitted the form
+
 I used session storage to store the details and used it to autofill form when page is reloaded or navigating from Page 3 to Page 2 to help users not to fill up the form again.
 
 When age, country, package is changed it will re calculate the premium price
