@@ -129,11 +129,11 @@
     const premium = 10 * age * packagePrice.rate
     const premiumPercentage = (percent: number) => packagePrice.standard * (percent / 100)
 
-    // update safe and super safe price
+    // update safe and super safe price by percentage of standard price
     packagePrice.safe = premiumPercentage(50) 
     packagePrice.superSafe = premiumPercentage(75)
 
-    // set premium price
+    // set premium price based on selected package
     if (form.package === 'Standard') return form.premium = premium + packagePrice.standard
     if (form.package === 'Safe') return form.premium = premium + packagePrice.safe + packagePrice.standard
     if (form.package === 'Super Safe') return form.premium = premium + packagePrice.superSafe + packagePrice.standard
