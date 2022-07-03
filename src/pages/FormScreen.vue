@@ -1,6 +1,6 @@
 <template>
   <div class="form-screen">
-    <div class="container bg-grey">
+    <div class="container">
       <h1>Tell us about yourself</h1>
       <RegisterForm />
     </div>

@@ -1,6 +1,6 @@
 <template>
   <div class="greeting-screen">
-    <div class="container bg-grey">
+    <div class="container">
       <h1>Hello There!</h1>
       <p>Let's buy some insurance. It is going to take only a few steps</p>
       <div class="action">

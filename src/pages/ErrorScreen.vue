@@ -1,6 +1,6 @@
 <template>
   <div class="error-screen">
-    <div class="container bg-grey">
+    <div class="container">
     <h1 :class="[isFormError ? '' : 'fz-5']">{{ isFormError ? 'Opps' : '404' }}</h1>
     <p>
       <span v-if="isFormError">

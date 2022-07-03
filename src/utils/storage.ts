@@ -1,4 +1,4 @@
-export const setItemStorage = (key: string, payload: any) => {
+export const setItemStorage = (key: string, payload: unknown) => {
   if (key && payload) {
     window.sessionStorage.setItem(key, JSON.stringify(payload))
     return true

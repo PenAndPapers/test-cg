@@ -17,7 +17,7 @@ utils - for setting, getting, removing session storage item
 
 assets - where we add styles, images
 
-## Details
+# Details
 
 Since the application is just small I did not used a state management library
 

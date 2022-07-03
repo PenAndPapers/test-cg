@@ -1,6 +1,6 @@
 <template>
   <div class="summary-screen">
-    <div class="container bg-grey">
+    <div class="container">
       <h1>Summary</h1>
       <p><span>Name:</span> {{ details.name }}</p>
       <p><span>Age:</span> {{ details.age }}</p>
@@ -44,7 +44,7 @@
   }
 
   const handleBuy = () => {
-    // TODO Api call
+    // TODO Api call before redirect
     handleRedirect('GreetingScreen')
     removeItemStorage('_DETAILS_')
   }
